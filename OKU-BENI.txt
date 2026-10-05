@@ -1,0 +1,52 @@
+========================================================
+  VEGA GİDER RAPORLAMA — HAZIR .EXE NASIL ALINIR?
+========================================================
+
+Bu paketle, bilgisayarınıza PYTHON KURMADAN ve ÜCRET ÖDEMEDEN
+hazır bir Windows ".exe" dosyası üretebilirsiniz. Derleme işini
+ücretsiz GitHub sunucuları sizin yerinize yapar.
+
+--------------------------------------------------------
+ADIM 1 — Ücretsiz GitHub hesabı açın
+--------------------------------------------------------
+https://github.com/signup  adresinden 2 dakikada ücretsiz hesap açın.
+
+--------------------------------------------------------
+ADIM 2 — Yeni bir depo (repository) oluşturun
+--------------------------------------------------------
+1. Sağ üstte "+" > "New repository" tıklayın.
+2. Bir isim verin (örn: vega-gider).
+3. "Public" (Herkese açık) seçin  --> ücretsiz derleme için gerekli.
+4. "Create repository" tıklayın.
+
+--------------------------------------------------------
+ADIM 3 — Bu klasördeki TÜM dosyaları yükleyin
+--------------------------------------------------------
+1. Açılan sayfada "uploading an existing file" bağlantısına tıklayın.
+2. Bu ZIP'ten çıkan TÜM dosya ve klasörleri (app.py, static, .github,
+   requirements.txt, build_windows.spec ...) sürükleyip bırakın.
+   NOT: Gizli ".github" klasörünün de yüklendiğinden emin olun.
+3. Altta "Commit changes" tıklayın.
+
+--------------------------------------------------------
+ADIM 4 — Derlemenin bitmesini bekleyin (~3-5 dakika)
+--------------------------------------------------------
+1. Depo sayfasında üstteki "Actions" sekmesine tıklayın.
+2. "Windows EXE Derle" işleminin yanında dönen simge bitince (yeşil tik)
+   üzerine tıklayın.
+3. Sayfanın altındaki "Artifacts" bölümünde
+   "VegaGiderRaporlama-Windows-EXE" dosyasını indirin.
+
+--------------------------------------------------------
+ADIM 5 — Çalıştırın
+--------------------------------------------------------
+İnen ZIP'i açın, içindeki "VegaGiderRaporlama.exe" dosyasına ÇİFT TIKLAYIN.
+- Tarayıcınız otomatik açılır (http://127.0.0.1:8777).
+- İnternet GEREKMEZ, veritabanı kurulumu GEREKMEZ.
+- Verileriniz: C:\Kullanicilar\<adiniz>\VegaGiderRaporlama\veri.db
+
+========================================================
+İsterseniz Python ile de çalıştırabilirsiniz:
+  pip install -r requirements.txt
+  python app.py   (veya baslat.bat'a çift tıklayın)
+========================================================
